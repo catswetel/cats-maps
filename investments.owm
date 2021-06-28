@@ -1,23 +1,23 @@
 title Wardley Map of Investments Product 
 anchor CONSUMER [0.97, 0.23]
 anchor BANK [0.94, 0.36]
-component trade financial instruments [0.92, 0.25] label [3, -21]
-component ??? [0.86, 0.11]
-component investments product [0.79, 0.23] label [-62, -20]
+component trade financial instruments [0.92, 0.25] label [-2, -8]
+component ??? [0.86, 0.11] label [-10, -10]
+component investments product [0.79, 0.23] label [-67, -16]
 component mobile app [0.39, 0.54] label [-28, 16]
-component instrument discovery [0.69, 0.66]
-component open position [0.69, 0.21] label [-80, -8]
+component instrument discovery [0.69, 0.66] label [12, -17]
+component open position [0.69, 0.21] label [-110, 2]
 component close position [0.72, 0.35] label [-9, -8]
-component open positions dashboard [0.64, 0.53] label [4, -23]
-component trading account [0.51, 0.47] label [-12, -31]
+component open positions dashboard [0.64, 0.53] label [-7, -10]
+component trading account [0.51, 0.47] label [-22, -31]
 component open account [0.43, 0.25]
 component fund account [0.43, 0.67] label [5, -10]
-component exchange interface [0.35, 0.18] label [-62, -16]
-component certified broker [0.25, 0.23]
-component compliance [0.20, 0.39] label [5, -10]
-component exchange fees [0.20, 0.56]
-component CICD [0.12, 0.43] label [10, 4]
-component auditable store [0.12, 0.76]
+component exchange interface [0.37, 0.18] label [-69, -12]
+component certified broker [0.22, 0.23] label [4, -18]
+component compliance [0.27, 0.39] label [5, -10]
+component exchange fees [0.26, 0.56]
+component CICD [0.07, 0.44] label [10, 4]
+component auditable store [0.12, 0.76] label [-2, -19]
 component transaction log [0.09, 0.64] label [-19, 4]
 CONSUMER -> trade financial instruments
 BANK -> ???
@@ -49,6 +49,8 @@ compliance -> transaction log
 compliance -> auditable store
 exchange fees -> transaction log
 exchange fees -> auditable store
+
+style wardley
 
 
 

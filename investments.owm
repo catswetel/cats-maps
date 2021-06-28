@@ -1,0 +1,63 @@
+title Wardley Map of Investments Product 
+anchor CONSUMER [0.97, 0.23]
+anchor BANK [0.94, 0.36]
+component trade financial instruments [0.92, 0.25] label [3, -21]
+component ??? [0.86, 0.11]
+component investments product [0.79, 0.23] label [-62, -20]
+component mobile app [0.39, 0.54] label [-28, 16]
+component instrument discovery [0.69, 0.66]
+component open position [0.69, 0.21] label [-80, -8]
+component close position [0.72, 0.35] label [-9, -8]
+component open positions dashboard [0.64, 0.53] label [4, -23]
+component trading account [0.51, 0.47] label [-12, -31]
+component open account [0.43, 0.25]
+component fund account [0.43, 0.67] label [5, -10]
+component exchange interface [0.35, 0.18] label [-62, -16]
+component certified broker [0.25, 0.23]
+component compliance [0.20, 0.39] label [5, -10]
+component exchange fees [0.20, 0.56]
+component CICD [0.12, 0.43] label [10, 4]
+component auditable store [0.12, 0.76]
+component transaction log [0.09, 0.64] label [-19, 4]
+CONSUMER -> trade financial instruments
+BANK -> ???
+BANK -> investments product
+trade financial instruments -> investments product
+investments product -> open position
+investments product -> close position
+open position -> close position
+investments product -> instrument discovery
+close position -> open positions dashboard
+investments product -> mobile app
+instrument discovery -> mobile app
+open positions dashboard -> mobile app
+open position -> trading account
+open position -> instrument discovery
+close position -> trading account
+trading account -> open account
+trading account -> fund account
+trading account -> mobile app
+open account -> mobile app
+fund account -> mobile app
+open position -> exchange interface
+close position -> exchange interface
+exchange interface -> certified broker
+exchange interface -> compliance
+exchange interface -> exchange fees
+compliance -> CICD
+compliance -> transaction log
+compliance -> auditable store
+exchange fees -> transaction log
+exchange fees -> auditable store
+
+
+
+
+
+
+
+
+
+
+
+

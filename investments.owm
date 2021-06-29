@@ -1,17 +1,19 @@
 title Wardley Map of Investments Product 
 
+//Entities and Components 
+
 anchor CONSUMER [0.97, 0.23]
 component trade financial instruments [0.92, 0.25] label [-2, -8]
 
 anchor BANK [0.94, 0.36]
 component ?business need? [0.86, 0.11] label [-29, -34]
-//Engineering has two customers: the consumers and the business. 
-//The business need for the Investments product is not clear. 
-//Out of all the things we could do for consumers, why this product now?
+////Engineering has two customers: the consumers and the business. 
+////The business need for the Investments product is not clear. 
+////Out of all the things we could do for consumers, why this product now?
 
 component investments product [0.79, 0.23] label [-67, -16]
 component mobile app [0.39, 0.54] label [-28, 16]
-//Quote from brief: "all within Nubank's existing mobile app"
+////Quote from brief: "all within Nubank's existing mobile app"
 
 component instrument discovery [0.64, 0.66] label [12, -17]
 component open position [0.69, 0.21] label [-110, 2]
@@ -21,25 +23,27 @@ component trading account [0.51, 0.47] label [-22, -31]
 
 component open account [0.43, 0.25]
 component fund account [0.43, 0.67] label [5, -10]
-//Initial scope is only existing customers. 
-//Assumption: a separate brokerage account is needed. 
-//Recommendation: easiest to fund brokerage account from existing checking/savings acct. 
+////Initial scope is only existing customers. 
+////Assumption: a separate brokerage account is needed. 
+////Recommendation: easiest to fund brokerage account from existing checking/savings acct. 
 
 component exchange interface [0.37, 0.18] label [-69, -12]
 component certified broker [0.22, 0.23] label [4, -18]
-//Option: use a 3rd party broker. 
-//Warning: outsourcing a key part of a Custom/Genesis offering is an antipattern. 
+////Option: use a 3rd party broker. 
+////Warning: outsourcing a key part of a Custom/Genesis offering is an antipattern. 
 
 component compliance [0.17, 0.42] label [-37, -8]
 component exchange fees [0.26, 0.56]
 component CICD [0.07, 0.44] label [10, 4]
-//A proper pipeline will make compliance and audit easy. 
+////A proper pipeline will make compliance and audit easy. 
 
 component auditable store [0.12, 0.76] label [-2, -19]
 component transaction log [0.09, 0.64] label [-19, 4]
-//Warning: This is a potential source of conflict. 
-//In some of the docs I've received there's mention of cutting infra and Kafka spend. 
-//What should ICs choose? Investments product vs spend goals 
+////Warning: This is a potential source of conflict. 
+////In some of the docs I've received there's mention of cutting infra and Kafka spend. 
+////What should ICs choose? Investments product vs spend goals 
+
+//Connections and Dependencies 
 
 CONSUMER -> trade financial instruments
 BANK -> ?business need?

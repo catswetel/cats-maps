@@ -1,3 +1,7 @@
+//Note from Cat: This map has been organized to be more human comprehendable. 
+//The comments are there to illustrate Cat's thinking and process. 
+//Please don't think I code in this style. 
+
 title Wardley Map of Investments Product 
 
 //Entities and Components 
@@ -28,7 +32,7 @@ component fund account [0.43, 0.67] label [5, -10]
 ////Recommendation: easiest to fund brokerage account from existing checking/savings acct. 
 
 component exchange interface [0.37, 0.18] label [-69, -12]
-component certified broker [0.22, 0.23] label [4, -18]
+component certified broker [0.22, 0.23] label [-60, -19]
 ////Option: use a 3rd party broker. 
 ////Warning: outsourcing a key part of a Custom/Genesis offering is an antipattern. 
 
@@ -70,6 +74,7 @@ close position -> exchange interface
 exchange interface -> certified broker
 exchange interface -> compliance
 exchange interface -> exchange fees
+certified broker -> compliance
 compliance -> CICD
 compliance -> transaction log
 compliance -> auditable store

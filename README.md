@@ -5,3 +5,5 @@ You can easily view the rendered maps by using:
 * https://onlinewardleymaps.com/ (just copy and paste the map source code). 
 
 The source code for these maps is full of comments to help you get to know Cat and understand her thought process. 
+
+Wondering where to start? Try the investments.owm map, then move on to the scenarios, if needed. 
